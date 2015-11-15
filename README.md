@@ -1,16 +1,24 @@
-# go-ca-bundles-generator
+# go-ca-bundle-generator
 
 ## Why use?
 
-Some environment that has no CA information causes TLS error,
-when we try to connect to websites via "https://".
+Some environments those have **no latest CA information** may cause TLS errors,  
+when we try to connect to websites via `https://``.  
+We need **`ca-bundle.crt`**.
+
+The source repository is here: **[bagder/ca-bundle](https://github.com/bagder/ca-bundle)**
 
 ## Usage
 
 ### Source Generation
 
-1. Copy `generate.sh` in your project root directory with executable permission.
-2. Execute `generate.sh`.
+Execute `generate.sh` in your project root directory.
+
+```ShellSession
+mpyw@localhost:~$ code=$(curl https://raw.githubusercontent.com/mpyw/go-ca-bundles-generator/master/generate.sh)
+mpyw@localhost:~$ cd /path/to/project
+mpyw@localhost:/path/to/project$ echo "$code" | bash
+```
 
 ### Source Importation API
 
