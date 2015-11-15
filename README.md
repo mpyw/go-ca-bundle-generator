@@ -15,33 +15,33 @@ The source repository is here: **[bagder/ca-bundle](https://github.com/bagder/ca
 Execute `generate.sh` in your project root directory.
 
 ```ShellSession
-mpyw@localhost:~$ code=$(curl https://raw.githubusercontent.com/mpyw/go-ca-bundles-generator/master/generate.sh)
+mpyw@localhost:~$ code=$(curl https://raw.githubusercontent.com/mpyw/go-ca-bundle-generator/master/generate.sh)
 mpyw@localhost:~$ cd /path/to/project
 mpyw@localhost:/path/to/project$ echo "$code" | bash
 ```
 
 ### Source Importation API
 
-Import `./cabundles`.  
+Import `./cabundle`.  
 Now you can use various levels of API.
 
-#### cabundles.GetCertPool()
+#### cabundle.GetCertPool()
 
-returns `*x509.CertPool` internally using `ca-bundles.pem`.
+returns `*x509.CertPool` internally using `ca-bundle.pem`.
 
-#### cabundles.GetTlsConfig()
+#### cabundle.GetTlsConfig()
 
-returns `*tls.Config` internally using `cabundles.GetCertPool()`.
+returns `*tls.Config` internally using `cabundle.GetCertPool()`.
 
-#### cabundles.GetTransport()
+#### cabundle.GetTransport()
 
-returns `*http.Transport` internally using `cabundles.GetTlsConfig()`.
+returns `*http.Transport` internally using `cabundle.GetTlsConfig()`.
 
-#### cabundles.GetClient()
+#### cabundle.GetClient()
 
-returns `*http.Client` internally using `cabundles.GetTransport`
+returns `*http.Client` internally using `cabundle.GetTransport`
 
-`./generate.sh` generate a go source file including latest `ca-bundles.pem` as resource.
+`./generate.sh` generate a go source file including latest `ca-bundle.pem` as resource.
 
 ## Test
 
