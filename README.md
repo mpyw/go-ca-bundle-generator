@@ -27,7 +27,7 @@ Now you can use various levels of API.
 
 #### cabundle.GetCertPool()
 
-returns `*x509.CertPool` internally using `ca-bundle.pem`.
+returns `*x509.CertPool` internally using `ca-bundle.crt`.
 
 #### cabundle.GetTlsConfig()
 
