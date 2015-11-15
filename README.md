@@ -41,7 +41,7 @@ returns `*http.Transport` internally using `cabundle.GetTlsConfig()`.
 
 returns `*http.Client` internally using `cabundle.GetTransport`
 
-`./generate.sh` generate a go source file including latest `ca-bundle.pem` as resource.
+`./generate.sh` generate a go source file including latest `ca-bundle.crt` as resource.
 
 ## Test
 
