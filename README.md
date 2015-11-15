@@ -3,7 +3,7 @@
 ## Why use?
 
 Some environments those have **no latest CA information** may cause TLS errors,  
-when we try to connect to websites via `https://``.  
+when we try to connect to websites via `https://`.  
 We need **`ca-bundle.crt`**.
 
 The source repository is here: **[bagder/ca-bundle](https://github.com/bagder/ca-bundle)**
@@ -20,7 +20,7 @@ mpyw@localhost:~$ cd /path/to/project
 mpyw@localhost:/path/to/project$ echo "$code" | bash
 ```
 
-### Source Importation API
+### Package API
 
 Import `./cabundle`.  
 Now you can use various levels of API.
