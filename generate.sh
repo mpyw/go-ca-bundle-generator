@@ -1,6 +1,6 @@
 #!/bin/bash
 
-data=$(curl https://raw.githubusercontent.com/bagder/ca-bundle/master/ca-bundle.crt)
+data=$(curl https://curl.haxx.se/ca/cacert.pem)
 
 if [ ! -e cabundle ]; then
     mkdir cabundle

@@ -6,7 +6,7 @@ Some environments those have **no latest CA information** may cause TLS errors,
 when we try to connect to websites via `https://`.  
 We need **`ca-bundle.crt`**.
 
-The source repository is here: **[bagder/ca-bundle](https://github.com/bagder/ca-bundle)**
+Source: **[https://curl.haxx.se/ca/cacert.pem](https://curl.haxx.se/ca/cacert.pem)**
 
 ## Usage
 
