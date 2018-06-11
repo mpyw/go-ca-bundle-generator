@@ -2,7 +2,7 @@
 
 ## Why use?
 
-Some environments those have **no latest CA information** may cause TLS errors,  
+Some environments which have **no latest CA information** may cause TLS errors,  
 when we try to connect to websites via `https://`.  
 We need **`ca-bundle.crt`**.
 
