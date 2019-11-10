@@ -15,9 +15,7 @@ Source: **[https://curl.haxx.se/ca/cacert.pem](https://curl.haxx.se/ca/cacert.pe
 Execute `generate.sh` in your project root directory.
 
 ```ShellSession
-mpyw@localhost:~$ code=$(curl https://raw.githubusercontent.com/mpyw/go-ca-bundle-generator/master/generate.sh)
-mpyw@localhost:~$ cd /path/to/project
-mpyw@localhost:/path/to/project$ echo "$code" | bash
+mpyw@localhost:/path/to/project$ curl https://raw.githubusercontent.com/mpyw/go-ca-bundle-generator/master/generate.sh | bash
 ```
 
 ### Package API
